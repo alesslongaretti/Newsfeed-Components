@@ -34,7 +34,7 @@ let menuItems = [
   
 */
 
-function createMenu (a,b,c,d,e,f) {
+function createMenu (menuItems) {
   const menu = document.createElement('div');
   const menuUl = document.createElement('ul');
   const menuOne = document.createElement('li');
@@ -64,12 +64,12 @@ function createMenu (a,b,c,d,e,f) {
   menuDiv.classList.toggle('menu--open');
   });
 
-  menuOne.textContent = a;
-  menuTwo.textContent = b;
-  menuThree.textContent = c;
-  menuFour.textContent = d;
-  menuFive.textContent = e;
-  menuSix.textContent = f;
+  menuOne.textContent = menuItems[0];
+  menuTwo.textContent = menuItems[1];
+  menuThree.textContent = menuItems[2];
+  menuFour.textContent = menuItems[3];
+  menuFive.textContent = menuItems[4];
+  menuSix.textContent = menuItems[5];
 
   return menu;
 }
